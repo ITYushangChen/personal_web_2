@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yushang Chen</title>
+    <style>
+        body {
+            font-family: 'WenQuanYi Zen Hei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('bg.webp') no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            transition: background 1s ease-in-out;
+        }
+        .profile-image {
+            position: absolute;
+            top:250px;
+            left:50%;
+            /* move down *//* move right */
+            
+            transform: translateX(-50%);
+            border-radius: 45%;
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+        .content {
+            background-color: rgba(255, 255, 255, 0.95);
+            margin: 750px auto;
+            margin-bottom: 100px;
+            padding: 20px;
+            width: 40%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-separator {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+            margin: 20px 0;
+        }
+        header {
+            background-color: rgba(14, 128, 30, 0.642);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 280px;            
+            margin: auto;
+            margin-top:30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 50px; /* Adjust the size as needed */
+        }
+
+        p {
+            margin-left: 50px;
+            margin-right: 20px;
+        }
+
+        section {
+            margin: 15px;
+        }
+        footer {
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #education {
+            display: flex;
+            justify-content: space-between;
+        }
+        .university-pane {
+            background-color: #f8f8f8; /* adjust as needed */
+            /* padding: 20px; */
+            box-shadow: 0 0 20px rgba(2, 144, 99, 0.4); /* increase shadow thickness */
+            width: 300px;
+            height: 400px;
+            transition: transform 0.4s ease-in-out;
+            box-shadow: 0 0 20px rgba(2, 144, 99, 0.4); /* increase shadow thickness */
+        }
+
+        .university-pane:hover {
+            transform: scale(1.2);
+        }
+        .university {
+            width: 45%; /* adjust as needed */
+            text-align: center;
+            margin-top:0px;
+        }
+
+        .university-logo {
+            width: 200px; /* adjust as needed */
+            height: 180px; /* adjust as needed */
+            object-fit: contain;
+        }
+        .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        .logo {
+            width: 70px; /* Adjust as needed */
+            height: 70px; /* Adjust as needed */
+            animation: spin 2s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    }
+    .panel-container {
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+        color: rgba(157, 137, 137, 0.694);
+    }
+
+    .panel {
+        margin: 10px;
+        padding: 40px;
+        border-radius: 12%;
+    }
+
+    #panel1 {
+        flex: 2; /* Adjust the value to make it wider */
+        background-color: #d1eff2; /* Replace with your preferred color */
+    }
+
+    #panel2 {
+        flex: 1; /* Adjust the value to make it narrower */
+        background-color: rgba(255, 255, 255, 0.95); /* Replace with your preferred color */
+    }
+    .project-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <img src="Yushang.jpg" alt="Profile Image" class="profile-image">
+    <div class="content">
+        <header>
+            <h1>陈煜商</h1>
+            <p>数据开发/算法实习</p>
+        </header>
+        <hr class="section-separator">
+        <h2>学习经历</h2>
+        <section id="education" class = "scroll-section">
+            <div class="university">
+                <div class="university-pane">
+                    <img src="usyd.jpeg" alt="Undergraduate University Logo" class="university-logo">
+                    <p>悉尼大学(QS:19)</p>
+                    <p>就读时间: 2020.8-2023.6</p>
+                    <p>专业: 数据科学</p>
+                    <p>主修课程: 数据结构与算法, 数据挖掘, 机器学习, 数据库系统, 数据可视化</p>
+                </div>
+            </div>
+            <div class="university">
+                <div class="university-pane">
+                    <img src="unsw.png" alt="Postgraduate University Logo" class="university-logo">
+                    <p>新南威尔士大学(QS:19)</p>
+                    <p>就读时间: 2022.2-2025.11</p>
+                    <p>专业: 信息技术(数据库方向)</p>
+                    <p>主修课程: 数据库系统, 数据仓库, 数据挖掘, 大数据技术, 云计算</p>
+                </div>
+            </div>
+        </section>
+        <div class = "uni_honor">
+            <h2 style = "text-align: left; font-size: 40px; margin-left: 30px;">奖项</h2>
+            <ul style="font-size: 20px; line-height: 3;margin-left: 20px;">
+                <li>没奖项</li>
+                <li>没奖项</li>
+                <li>没奖项</li>
+            </ul>
+        </div>
+
+        <hr class="section-separator">
+        <section id="internships" class="scroll-section">
+            <h2>实习经历</h2>
+            <img src="zhizhuan.png" width="150" height="80" style="margin-left: 240px;">
+            <h3 style="font-size:25px">数据分析实习生
+                <span style="margin-left: 20px; font-size:15px">base杭州</span>
+                <span style="margin-left: 250px; font-size:17px">2023.10-2024.2</span>
+            </h3>
+            <ul style="font-size: 20px; line-height: 3;">
+                <li>搭建小型mysql关系型数据库</li>
+                <li>摘取生意参谋日、月纬度数据并使用python自动化清理数据</li>
+                <li>深入理解阿里AIPL营销模型并基于理解产出PPT</li>
+                <li>使用tableau进行数据可视化、监视数据</li>
+                <li>协助完成数次品牌诊断分析并制作售前报告</li>
+            </ul>
+        </section>
+        <hr class="section-separator">
+        <section id="projects" class="scroll-section">
+            <h2 class="center-heading">项目经历</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>眼动控制系统</h3>
+                    <img src="python.png" class="logo" alt="Logo">
+                    <!-- <img src="pycharm.png" class="logo" alt="Logo"> -->
+                    <img src="ml.jpeg" class="logo" alt="Logo">
+                    <p>项目时间: 2023.03-2023.06</p>
+                    <p>项目描述:通过Spikerbox实现用眼睛转动翻转电子书和演示文档，以及暂停和开始的功能</p>
+                    <a href="https://github.com/username/project1" target="_blank">GitHub Link</a>
+                    <a href="PROJECT3888.pdf" target="_blank">Slides</a>
+                    <a href="DEMO.mp4" target="_blank">Demo</a>
+                </div>
+                <div class="project-card">
+                    <h3>步数分析</h3>
+                    <img src="python.png" class="logo" alt="Logo">
+                    <img src="jupyter.jpeg" class="logo" alt="Logo">
+                    <p>项目背景:医疗报告显示，人每天走8k-10k步对健康最好，基于此希望分析得到，人每天走的步数与哪些因素相
+                        关性较高。</p>
+                    <a href="https://github.com/username/project2" target="_blank">GitHub Link</a>
+                </div>
+                <div class="project-card">
+                    <h3>悉尼租房评估项目</h3>
+                    <img src="psql.jpeg" class="logo" alt="Logo">
+                    <p>项目背景：根据社区的地理位置、居民平均月薪、均人口、房租价格等指标，加权定义该房子的租房“性价比”指标，选出最适合租住的社区</p>
+                    <a href="https://github.com/username/project3" target="_blank">GitHub Link</a>
+                    <a href="DATA2001.pdf" target="_blank">Report</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 4</h3>
+                    <p>Description of Project 4</p>
+                    <a href="https://github.com/username/project4" target="_blank">GitHub Link</a>
+                </div>
+                
+            </div>
+        </section>
+        <hr class="section-separator">
+        <section id="aboutme" class="scroll-section">
+            <h2>关于我</h2>
+            <div class="panel-container">
+                <div class="panel" id="panel1">Panel 1 content</div>
+                <div class="panel" id="panel2">人格类型
+                    <img src="mbti.jpg" width=100% height=100% style = "margin: 0px;">
+                </div>
+            </div>
+        </section>
+    </div>
+    <p style="text-align: center; font-size:18px; color:#f8f8f8">©Yushang Chen | Phone: 15258568652 | Email: Cys010122@gmail.com</p>
+
+
+
+
+    <script>
+        window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('.scroll-section');
+        let bgImage = 'bg.webp';
+
+        sections.forEach((section) => {
+            const rect = section.getBoundingClientRect();
+            if (rect.top + 400 < window.innerHeight && rect.bottom > 0) {
+                bgImage = section.id + '.jpeg';
+            }
+        });
+
+        document.body.style.backgroundImage = 'url(' + bgImage + ')';
+    });
+    </script>
+</body>
+</html>
